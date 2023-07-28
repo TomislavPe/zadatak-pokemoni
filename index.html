@@ -9,13 +9,13 @@
 </head>
 <body>
     <script id="entry-template" type="text/x-handlebars-template">
-        <div class="entry">
-          <h1>{{title}}</h1>
-          <div class="body">
-            {{body}}
+      <h2>Posts from the API</h2>
+      {{#each pokemon_species}}
+          <div>
+              <h3>{{name}}</h3>
+              <p>{{url}}</p>
           </div>
-          <img src={{imgURL}} width="200" alt="">
-        </div>
+      {{/each}}
     </script>
 </body>
 </html>
